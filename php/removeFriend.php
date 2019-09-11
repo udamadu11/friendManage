@@ -10,6 +10,7 @@
     <table class="table">
   <thead class="thead-dark">
     <tr>
+      <th scope="col">Id</th>
       <th scope="col">First Name</th>
       <th scope="col">Last Name</th>
       <th scope="col">User Name</th>
@@ -29,6 +30,7 @@
         while ($row = mysqli_fetch_array($result)) {
           echo "
            <tr>
+            <td>".$row['id']."</td>
             <td>".$row['fname']."</td>
             <td>".$row['lname']."</td>
             <td>".$row['uname']."</td>
@@ -36,15 +38,26 @@
             <td>".$row['email']."</td>
             <td>".$row['contact']."</td>
             <td>
-              <form>
-                
-              </form>
+            <form method=\"post\">
+            <input type=\"hidden\" name=\"delete\" value=".$row['id'].">
+            <input type=\"submit\" name=\"submit\" class=\"btn btn-primary\" value=\"Delete\">
+            </form>
             </td>
 
           </tr>
       ";
         }
-      
+       if (isset($_POST['submit'])) {
+       $d_id = $_POST['delete'];
+       $delete_query ="DELETE FROM user WHERE id = '$d_id' ";
+       $delete_result = mysqli_query($con,$delete_query);
+
+       if($delete_result){
+        echo "<script>alert('Successfuly Deleted')</script>";
+        echo "<script>window.open('removeFriend.php', '_self')</script>";
+    }
+     }
+
 
 
        ?>
