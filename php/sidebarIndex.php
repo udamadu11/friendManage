@@ -6,10 +6,10 @@
 </head>
 <body>
 <div class="sidenav">
-		<a href="AddUser.php" target="main">Add User</a>
-		<a href="viewUser.php" target="main">View User</a>
-		<a href="removeUser.php" target="main">Remove User</a>
-		<a href="editUser.php" target="main">Edit User</a>
+		<a href="AddUser.php" target="main">Add Friend</a>
+		<a href="viewFriend.php" target="main">View Friend</a>
+		<a href="removeFriend.php" target="main">Remove Friend</a>
+		<a href="editUser.php" target="main">Edit Friend</a>
 		
 	</div>
 </body>

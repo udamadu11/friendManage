@@ -45,7 +45,7 @@
   </div>
   
   
-  <button type="submit" class="btn btn-primary btn-lg btn-block" name="submit">Add User</button>
+  <button type="submit" class="btn btn-dark btn-lg btn-block" name="submit">Add User</button>
 </form>
 </div>
 </body>
