@@ -82,7 +82,7 @@ if (isset($_POST['submit'])) {
   	if ($result2) {
   		echo "
   		<script>alert('Succesfully Updated..')</script>
-          <script>window.open('viewFriend.php')</script>
+          <script>window.open('viewFriend.php','_self')</script>
   		";
   	}
   }
