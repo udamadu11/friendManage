@@ -6,8 +6,10 @@
 </head>
 <body>
 <div class="sidenav">
+		<a href="dashboard.php" target="main">Dashboard</a>
 		<a href="AddUser.php" target="main">Add User</a>
 		<a href="viewFriend.php" target="main">User Manage</a>
+		
 	</div>
 </body>
 </html>a

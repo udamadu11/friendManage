@@ -6,7 +6,7 @@
 <body>
 	<div class="topnav">
 		<img src="">
-		<h4>Friends Manage System</h4>	
+		<h4>................</h4>	
 	</div>
 
 </body>

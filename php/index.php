@@ -7,7 +7,7 @@
   		<frame src="top.php" border="-5px">
   			<frameset cols="13%,87%" border="-5px">
     			<frame src="sidebarIndex.php" border="-5px">
-          <frame src="AddUser.php" name="main" border="-5px">
+          <frame src="dashboard.php" name="main" border="-5px">
   			</frameset>
 	</frameset>
 </head>
