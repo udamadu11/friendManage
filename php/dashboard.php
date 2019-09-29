@@ -8,12 +8,18 @@
 <body>
 
 	<div class="row" style="margin-top: 50px;margin-left: 150px;">
-<div class="card text-white bg-primary mb-3" style="max-width: 20rem;margin-right: 8px;">
-  <div class="card-header">Sales</div>
+<div class="card text-white bg-primary mb-3" style="max-width: 20rem;margin-right: 8px; width: 200px;">
+  <div class="card-header">Users</div>
   <div class="card-body">
-    <i class="material-icons">cloud</i>
-    <h4 class="card-title">Primary card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <i class="material-icons" style="font-size:40px;">people</i>
+    	<?php
+    		include('include/connection.php');
+    		$usrsql = "SELECT * FROM user";
+    		$usrresul = mysqli_query($con,$usrsql);
+    		$userCount = mysqli_num_rows($usrresul);
+    		echo "<div class='huge'>Count  {$userCount}</div>";
+
+    	?>
   </div>
 </div>
 <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;margin-right: 8px;">
