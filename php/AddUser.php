@@ -6,6 +6,7 @@
 </head>
 <body>
   <div class="container" style="margin-top: 100px;">
+    <button class="btn btn-dark btn-lg btn-block" name="submit" style="margin-bottom: 30px;">User Information</button>
 <form method="post">
   <div class="form-row">
     <div class="form-group col-md-6">

@@ -7,7 +7,7 @@
 </head>
 <body>
  	<h4 style="text-align: center;margin-top: 20px;" class="display-4">Welcome to Dashbord</h4>
-	<div class="row" style="margin-top: 50px;margin-left: 150px;">
+	<div class="row" style="margin-top: 30px;margin-left: 150px;">
 <div class="card text-white bg-primary mb-3" style="max-width: 20rem;margin-right: 8px; width: 200px;">
   <div class="card-header">Users</div>
   <div class="card-body">
