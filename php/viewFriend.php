@@ -10,6 +10,7 @@
 		<table class="table">
   <thead class="thead-dark">
     <tr>
+      <th scope="col">Id</th>
       <th scope="col">First Name</th>
       <th scope="col">Last Name</th>
       <th scope="col">User Name</th>
@@ -28,12 +29,25 @@
       	while ($row = mysqli_fetch_array($result)) {
       		echo "
       		 <tr>
+            <td>".$row['id']."</td>
       		 	<td>".$row['fname']."</td>
       		 	<td>".$row['lname']."</td>
       		 	<td>".$row['uname']."</td>
       		 	<td>".$row['address']."</td>
       		 	<td>".$row['email']."</td>
       		 	<td>".$row['contact']."</td>
+            <td>
+            <form method=\"post\" action=\"editFriend.php\">
+              <input type=\"hidden\" name=\"editing\" value=".$row['id'].">
+              <input type=\"submit\" name =\"edit\" value=\"Edit\" class=\"btn btn-success\">
+              </form>
+            </td>
+            <td>
+            <form method=\"post\">
+              <input type=\"hidden\" name=\"deleting\" value=".$row['id'].">
+              <input type=\"submit\" name =\"delete\" value=\"Delete\" class=\"btn btn-danger\">
+              </form>
+            </td>
 
       		</tr>
       ";
@@ -50,3 +64,17 @@
 
 </body>
 </html>
+<?php 
+  if (isset($_POST['delete'])) {
+    $deleteId = $_POST['deleting'];
+    $query = "DELETE FROM user WHERE id = '$deleteId'";
+    $queryResult = mysqli_query($con,$query);
+    if ($queryResult) {
+       echo "
+          <script>alert('Succesfully Deleted..')</script>
+          <script>window.open('viewFriend.php','_self')</script>
+       ";
+     } 
+  }
+
+?>
