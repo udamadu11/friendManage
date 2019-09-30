@@ -61,11 +61,11 @@
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses', 'Profit'],
-          ['2014', 1000, 400, 600],
-          ['2015', 1170, 460, 250],
-          ['2016', 660, 1120, 300],
-          ['2017', 1030, 540, 350]
+          ['Year', 'Sales', 'Expenses', 'Profit','Income'],
+          ['2014', 1000, 400, 600,122],
+          ['2015', 1170, 460, 250,900],
+          ['2016', 660, 1120, 300,876],
+          ['2017', 1030, 540, 350,122]
         ]);
 
         var options = {

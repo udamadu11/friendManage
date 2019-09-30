@@ -11,7 +11,8 @@
 
 		<a href="dashboard.php" target="main"><i class="material-icons" style="font-size:15px">dashboard</i>&nbsp Dashboard</a>
 		<a href="AddUser.php" target="main"><i class="material-icons" style="font-size:15px">account_box</i>&nbsp Add User</a>
-		<a href="viewFriend.php" target="main"><i class="material-icons" style="font-size:15px">mode_edit</i>&nbsp User Manage</a>
+		<a href="viewFriend.php" target="main"><i class="material-icons" style="font-size:17px">group_add</i>&nbsp User Manage</a>
+		<a href="post.php" target="main"><i class="material-icons" style="font-size:15px">mode_edit</i>&nbsp Post</a>
 		
 	</div>
 </body>
