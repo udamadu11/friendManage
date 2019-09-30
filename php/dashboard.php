@@ -18,15 +18,23 @@
     		$usrsql = "SELECT * FROM user";
     		$usrresul = mysqli_query($con,$usrsql);
     		$userCount = mysqli_num_rows($usrresul);
-    		echo "<div class='huge'>Count  {$userCount}</div>";
+    		echo "<div class='huge'>Count {$userCount}</div>";
 
     	?>
   </div>
 </div>
 <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;margin-right: 8px;">
-  <div class="card-header">Users</div>
+  <div class="card-header"> Posts</div>
   <div class="card-body">
-    <h4 class="card-title">Secondary card</h4>
+  	<i class="material-icons" style="font-size:40px; width: 120px;">note</i>
+    <?php
+    		include('include/connection.php');
+    		$postsql = "SELECT * FROM post";
+    		$postresul = mysqli_query($con,$postsql);
+    		$postCount = mysqli_num_rows($postresul);
+    		echo "<div class='huge'>Count {$postCount}</div>";
+
+    	?>
     
   </div>
 </div>

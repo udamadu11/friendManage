@@ -6,7 +6,10 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-  <div class="container" style="margin-top: 100px;">
+  <div class="container" style="margin-top:100px;">
+
+    <input type="submit" value="Add Post" class="btn btn-dark btn-lg btn-block" style="margin-bottom: 40px;">
+
     <form method="post" enctype="multipart/form-data"> 
 
           <div class="row">
@@ -47,7 +50,7 @@
              </script>
           </div>
           <div class="form-group col-md-14">
-            <input type="submit" name="submit" value="Post" class="btn btn-primary btn-lg btn-block" style="margin-top: 40px;">
+            <input type="submit" name="submit" value="Post" class="btn btn-dark btn-lg btn-block" style="margin-top: 40px;">
           </div>
       
     </form>
